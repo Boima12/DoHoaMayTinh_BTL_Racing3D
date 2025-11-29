@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/engine/render.cpp" "CMakeFiles/Racing3D.dir/src/engine/render.cpp.obj" "gcc" "CMakeFiles/Racing3D.dir/src/engine/render.cpp.obj.d"
   "D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/car.cpp" "CMakeFiles/Racing3D.dir/src/game/car.cpp.obj" "gcc" "CMakeFiles/Racing3D.dir/src/game/car.cpp.obj.d"
   "D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/game.cpp" "CMakeFiles/Racing3D.dir/src/game/game.cpp.obj" "gcc" "CMakeFiles/Racing3D.dir/src/game/game.cpp.obj.d"
+  "D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/scenery.cpp" "CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj" "gcc" "CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj.d"
   "D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/track.cpp" "CMakeFiles/Racing3D.dir/src/game/track.cpp.obj" "gcc" "CMakeFiles/Racing3D.dir/src/game/track.cpp.obj.d"
   "D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/main.cpp" "CMakeFiles/Racing3D.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Racing3D.dir/src/main.cpp.obj.d"
   )

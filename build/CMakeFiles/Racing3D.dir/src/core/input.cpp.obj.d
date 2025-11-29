@@ -31,4 +31,5 @@ CMakeFiles/Racing3D.dir/src/core/input.cpp.obj: \
  C:/msys64/mingw64/include/malloc.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
  C:/msys64/mingw64/include/errno.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
+ D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/config.h
