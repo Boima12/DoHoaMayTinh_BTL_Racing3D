@@ -1,6 +1,7 @@
 // Basic input state tracking
 #include "../../include/input.h"
 #include <cstring>
+#include <cstdlib>
 #include <utility>
 
 namespace Input {

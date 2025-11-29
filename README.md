@@ -1,3 +1,16 @@
+### Đồ họa máy tính - Bài tập lớn - Racing3D bằng freeglut
+
+#### Thành viên nhóm 9: <br>
+- Cao Hoàng Phước Bảo - 23IT010
+- Đặng Thần Cầu - 23IT025
+- Nguyễn Quốc Hoàng - 23IT087 
+
+> [! IMPORTANT]
+> Đọc file SETUP_GUIDE.md để biết cách chạy
+
+<br> <br> <br> <br> <br>
+<hr>
+
 ### Các câu lệnh Github
 
 - Tạo branch mới để làm tính năng mới trên đó <br>
@@ -51,5 +64,3 @@ src/main.cpp - file entry (chạy file này) <br>
 
 <br> <br> <br> <br> <br>
 <hr>
-
-![Note](image.png)
