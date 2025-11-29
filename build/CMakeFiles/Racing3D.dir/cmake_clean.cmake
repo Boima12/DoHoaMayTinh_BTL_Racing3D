@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Racing3D.dir/src/game/car.cpp.obj.d"
   "CMakeFiles/Racing3D.dir/src/game/game.cpp.obj"
   "CMakeFiles/Racing3D.dir/src/game/game.cpp.obj.d"
+  "CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj"
+  "CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj.d"
   "CMakeFiles/Racing3D.dir/src/game/track.cpp.obj"
   "CMakeFiles/Racing3D.dir/src/game/track.cpp.obj.d"
   "CMakeFiles/Racing3D.dir/src/main.cpp.obj"

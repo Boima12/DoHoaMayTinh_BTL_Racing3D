@@ -1,6 +1,7 @@
-CMakeFiles/Racing3D.dir/src/game/game.cpp.obj: \
- D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\game.cpp \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/game.h \
+CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj: \
+ D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\scenery.cpp \
+ D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/scenery.h \
+ D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/track.h \
  D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/camera.h \
  D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/input.h \
  C:/msys64/mingw64/include/c++/13.2.0/utility \
@@ -14,9 +15,6 @@ CMakeFiles/Racing3D.dir/src/game/game.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h \
  C:/msys64/mingw64/include/c++/13.2.0/initializer_list \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/car.h \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/camera.h \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/track.h \
  C:/msys64/mingw64/include/c++/13.2.0/vector \
  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
@@ -107,9 +105,6 @@ CMakeFiles/Racing3D.dir/src/game/game.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/cerrno \
  C:/msys64/mingw64/include/c++/13.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/scenery.h \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/track.h \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/config.h \
  C:/msys64/mingw64/include/GL/freeglut.h \
  C:/msys64/mingw64/include/GL/freeglut_std.h \
  C:/msys64/mingw64/include/windows.h \
