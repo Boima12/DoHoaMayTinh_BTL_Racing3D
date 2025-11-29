@@ -34,3 +34,5 @@ cmake --build . --config Release
 cd build
 cmake --build . --config Release
 ```
+
+lúc này sẽ xuất hiện một file build/Racing3D.exe, double click vào file đó để chạy.
