@@ -24,32 +24,32 @@ git pull origin main
 <hr>
 
 ### Cấu trúc thư mục của dự án
-assets/models/ - chứa mô hình 3D
-assets/shaders/ - chứa shader program
-assets/textures/ - chứa hình ảnh texture dùng cho mặt đường, xe, vật thể
-include/camera.h - file header
-include/car.h - file header
-include/game.h - file header
-include/input.h - file header
-include/math.h - file header
-include/render.h - file header
-include/timer.h - file header
-include/track.h - file header
-include/window.h - file header
-src/core/input.cpp - Bắt phím, chuột, xử lý các sự kiện nhập từ người chơi.
-src/core/timer.cpp - Hệ thống đếm thời gian/frame time để cập nhật chuyển động mượt mà.
-src/core/window.cpp - Khởi tạo cửa sổ FreeGLUT, cấu hình context OpenGL, xử lý resize.
-src/engine/camera.cpp - Xử lý camera: góc nhìn, vị trí, hướng, di chuyển camera.
-src/engine/math.cpp - Hàm toán học hỗ trợ: vector, độ dài, chuẩn hóa, tính góc, clamp,...
-src/engine/render.cpp - Hàm render chung: setup lighting, vẽ mô hình, vẽ mesh, cấu hình OpenGL.
-src/game/car.cpp - Xử lý xe: vị trí, vận tốc, rẽ trái/phải, vật lý đơn giản.
-src/game/game.cpp - Game loop, cập nhật trạng thái game, gọi render, điều khiển cảnh.
-src/game/track.cpp - Sinh đường đua, hình dạng track, checkpoint, vật cản, màu sắc.
-src/main.cpp - file entry (chạy file này)
-./CMakeLists.txt - Cấu hình build cho CMake, dùng để biên dịch toàn bộ project.
-./README.md - file README.md 
-
+assets/models/ - chứa mô hình 3D <br>
+assets/shaders/ - chứa shader program <br>
+assets/textures/ - chứa hình ảnh texture dùng cho mặt đường, xe, vật thể <br>
+include/camera.h - file header <br>
+include/car.h - file header <br>
+include/game.h - file header <br>
+include/input.h - file header <br>
+include/math.h - file header <br>
+include/render.h - file header <br>
+include/timer.h - file header <br>
+include/track.h - file header <br>
+include/window.h - file header <br>
+src/core/input.cpp - Bắt phím, chuột, xử lý các sự kiện nhập từ người chơi. <br>
+src/core/timer.cpp - Hệ thống đếm thời gian/frame time để cập nhật chuyển động mượt mà. <br>
+src/core/window.cpp - Khởi tạo cửa sổ FreeGLUT, cấu hình context OpenGL, xử lý resize. <br>
+src/engine/camera.cpp - Xử lý camera: góc nhìn, vị trí, hướng, di chuyển camera. <br>
+src/engine/math.cpp - Hàm toán học hỗ trợ: vector, độ dài, chuẩn hóa, tính góc, clamp,... <br>
+src/engine/render.cpp - Hàm render chung: setup lighting, vẽ mô hình, vẽ mesh, cấu hình OpenGL. <br>
+src/game/car.cpp - Xử lý xe: vị trí, vận tốc, rẽ trái/phải, vật lý đơn giản. <br>
+src/game/game.cpp - Game loop, cập nhật trạng thái game, gọi render, điều khiển cảnh. <br>
+src/game/track.cpp - Sinh đường đua, hình dạng track, checkpoint, vật cản, màu sắc. <br>
+src/main.cpp - file entry (chạy file này) <br>
+./CMakeLists.txt - Cấu hình build cho CMake, dùng để biên dịch toàn bộ project. <br>
+./README.md - file README.md  <br>
 
 <br> <br> <br> <br> <br>
 <hr>
 
+![Note](image.png)
