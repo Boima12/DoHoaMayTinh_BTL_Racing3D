@@ -3,6 +3,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <utility>
+#include "../../include/config.h"
 
 namespace Input {
     static bool keys[256];
@@ -19,6 +20,9 @@ namespace Input {
         keys[key] = true;
         if (key == 27) { // ESC
             exit(0);
+        }
+        if (key == 'c' || key == 'C') {
+            Config::showScenery = !Config::showScenery;
         }
     }
     void onKeyUp(unsigned char key, int x, int y) {
