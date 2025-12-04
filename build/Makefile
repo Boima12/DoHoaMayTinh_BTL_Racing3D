@@ -320,6 +320,30 @@ src/game/game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Racing3D.dir\build.make CMakeFiles/Racing3D.dir/src/game/game.cpp.s
 .PHONY : src/game/game.cpp.s
 
+src/game/hud.obj: src/game/hud.cpp.obj
+.PHONY : src/game/hud.obj
+
+# target to build an object file
+src/game/hud.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Racing3D.dir\build.make CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj
+.PHONY : src/game/hud.cpp.obj
+
+src/game/hud.i: src/game/hud.cpp.i
+.PHONY : src/game/hud.i
+
+# target to preprocess a source file
+src/game/hud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Racing3D.dir\build.make CMakeFiles/Racing3D.dir/src/game/hud.cpp.i
+.PHONY : src/game/hud.cpp.i
+
+src/game/hud.s: src/game/hud.cpp.s
+.PHONY : src/game/hud.s
+
+# target to generate assembly for a file
+src/game/hud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Racing3D.dir\build.make CMakeFiles/Racing3D.dir/src/game/hud.cpp.s
+.PHONY : src/game/hud.cpp.s
+
 src/game/scenery.obj: src/game/scenery.cpp.obj
 .PHONY : src/game/scenery.obj
 
@@ -425,6 +449,9 @@ help:
 	@echo ... src/game/game.obj
 	@echo ... src/game/game.i
 	@echo ... src/game/game.s
+	@echo ... src/game/hud.obj
+	@echo ... src/game/hud.i
+	@echo ... src/game/hud.s
 	@echo ... src/game/scenery.obj
 	@echo ... src/game/scenery.i
 	@echo ... src/game/scenery.s

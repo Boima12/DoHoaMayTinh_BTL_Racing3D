@@ -191,11 +191,26 @@ CMakeFiles/Racing3D.dir/src/game/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Racing3D.dir/src/game/game.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\game.cpp -o CMakeFiles\Racing3D.dir\src\game\game.cpp.s
 
+CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj: CMakeFiles/Racing3D.dir/flags.make
+CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj: CMakeFiles/Racing3D.dir/includes_CXX.rsp
+CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj: D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/hud.cpp
+CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj: CMakeFiles/Racing3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj -MF CMakeFiles\Racing3D.dir\src\game\hud.cpp.obj.d -o CMakeFiles\Racing3D.dir\src\game\hud.cpp.obj -c D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\hud.cpp
+
+CMakeFiles/Racing3D.dir/src/game/hud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Racing3D.dir/src/game/hud.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\hud.cpp > CMakeFiles\Racing3D.dir\src\game\hud.cpp.i
+
+CMakeFiles/Racing3D.dir/src/game/hud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Racing3D.dir/src/game/hud.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\hud.cpp -o CMakeFiles\Racing3D.dir\src\game\hud.cpp.s
+
 CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj: CMakeFiles/Racing3D.dir/flags.make
 CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj: CMakeFiles/Racing3D.dir/includes_CXX.rsp
 CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj: D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/scenery.cpp
 CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj: CMakeFiles/Racing3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj -MF CMakeFiles\Racing3D.dir\src\game\scenery.cpp.obj.d -o CMakeFiles\Racing3D.dir\src\game\scenery.cpp.obj -c D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\scenery.cpp
 
 CMakeFiles/Racing3D.dir/src/game/scenery.cpp.i: cmake_force
@@ -210,7 +225,7 @@ CMakeFiles/Racing3D.dir/src/game/track.cpp.obj: CMakeFiles/Racing3D.dir/flags.ma
 CMakeFiles/Racing3D.dir/src/game/track.cpp.obj: CMakeFiles/Racing3D.dir/includes_CXX.rsp
 CMakeFiles/Racing3D.dir/src/game/track.cpp.obj: D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/game/track.cpp
 CMakeFiles/Racing3D.dir/src/game/track.cpp.obj: CMakeFiles/Racing3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Racing3D.dir/src/game/track.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Racing3D.dir/src/game/track.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Racing3D.dir/src/game/track.cpp.obj -MF CMakeFiles\Racing3D.dir\src\game\track.cpp.obj.d -o CMakeFiles\Racing3D.dir\src\game\track.cpp.obj -c D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\game\track.cpp
 
 CMakeFiles/Racing3D.dir/src/game/track.cpp.i: cmake_force
@@ -225,7 +240,7 @@ CMakeFiles/Racing3D.dir/src/main.cpp.obj: CMakeFiles/Racing3D.dir/flags.make
 CMakeFiles/Racing3D.dir/src/main.cpp.obj: CMakeFiles/Racing3D.dir/includes_CXX.rsp
 CMakeFiles/Racing3D.dir/src/main.cpp.obj: D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/src/main.cpp
 CMakeFiles/Racing3D.dir/src/main.cpp.obj: CMakeFiles/Racing3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Racing3D.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Racing3D.dir/src/main.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Racing3D.dir/src/main.cpp.obj -MF CMakeFiles\Racing3D.dir\src\main.cpp.obj.d -o CMakeFiles\Racing3D.dir\src\main.cpp.obj -c D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\src\main.cpp
 
 CMakeFiles/Racing3D.dir/src/main.cpp.i: cmake_force
@@ -246,6 +261,7 @@ Racing3D_OBJECTS = \
 "CMakeFiles/Racing3D.dir/src/engine/render.cpp.obj" \
 "CMakeFiles/Racing3D.dir/src/game/car.cpp.obj" \
 "CMakeFiles/Racing3D.dir/src/game/game.cpp.obj" \
+"CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj" \
 "CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj" \
 "CMakeFiles/Racing3D.dir/src/game/track.cpp.obj" \
 "CMakeFiles/Racing3D.dir/src/main.cpp.obj"
@@ -261,6 +277,7 @@ Racing3D.exe: CMakeFiles/Racing3D.dir/src/engine/math.cpp.obj
 Racing3D.exe: CMakeFiles/Racing3D.dir/src/engine/render.cpp.obj
 Racing3D.exe: CMakeFiles/Racing3D.dir/src/game/car.cpp.obj
 Racing3D.exe: CMakeFiles/Racing3D.dir/src/game/game.cpp.obj
+Racing3D.exe: CMakeFiles/Racing3D.dir/src/game/hud.cpp.obj
 Racing3D.exe: CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj
 Racing3D.exe: CMakeFiles/Racing3D.dir/src/game/track.cpp.obj
 Racing3D.exe: CMakeFiles/Racing3D.dir/src/main.cpp.obj
@@ -268,7 +285,7 @@ Racing3D.exe: CMakeFiles/Racing3D.dir/build.make
 Racing3D.exe: CMakeFiles/Racing3D.dir/linkLibs.rsp
 Racing3D.exe: CMakeFiles/Racing3D.dir/objects1.rsp
 Racing3D.exe: CMakeFiles/Racing3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Racing3D.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Work2\Coding_stuff\Computer_graphic\projects\DoHoaMayTinh_BTL_Racing3D\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Racing3D.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Racing3D.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
