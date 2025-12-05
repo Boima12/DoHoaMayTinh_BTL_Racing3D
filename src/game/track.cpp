@@ -4,12 +4,11 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
-#include <fstream>
+#include "../../include/config.h"
 
 static float clampf(float v, float a, float b) { return (v<a)?a: (v>b)?b: v; }
 
 static Vec3 catmullRom(const Vec3 &p0, const Vec3 &p1, const Vec3 &p2, const Vec3 &p3, float t) {
-    // Catmull-Rom spline (centripetal form omitted for simplicity)
     float t2 = t * t;
     float t3 = t2 * t;
     Vec3 res;
@@ -33,7 +32,6 @@ void Track::initDefault() {
     for (int i = 0; i < 12; ++i) {
         float a = (float)i / 12.0f * 2.0f * 3.14159265f;
         Vec3 p{ rx * cosf(a), 0.0f, rz * sinf(a) };
-        // add a slight bump
         p.y = 0.0f;
         controlPoints.push_back(p);
     }
@@ -61,7 +59,7 @@ bool Track::loadFromFile(const std::string &path) {
         return false;
     }
 
-    buildSampled();   // tạo đường mượt
+    buildSampled();
     return true;
 }
 
@@ -86,7 +84,6 @@ void Track::draw() const {
     if (sampled.empty()) return;
 
     // Draw road surface using triangle strip
-    // allow lighting; set material for road (darker, low spec)
     GLfloat roadSpec[] = {0.05f, 0.05f, 0.05f, 1.0f};
     glMaterialfv(GL_FRONT, GL_SPECULAR, roadSpec);
     glMaterialf(GL_FRONT, GL_SHININESS, 8.0f);
@@ -94,15 +91,12 @@ void Track::draw() const {
     glBegin(GL_TRIANGLE_STRIP);
     for (size_t i = 0; i < sampled.size(); ++i) {
         const Vec3 &p = sampled[i];
-        // compute forward tangential
         const Vec3 &pNext = sampled[(i + 1) % sampled.size()];
         Vec3 forward{pNext.x - p.x, pNext.y - p.y, pNext.z - p.z};
-        // horizontalize
         forward.y = 0.0f;
         float flen = sqrtf(forward.x*forward.x + forward.z*forward.z);
         if (flen == 0) flen = 1.0f;
         forward.x /= flen; forward.z /= flen;
-        // left normal = cross(up, forward)
         Vec3 left{ -forward.z, 0.0f, forward.x };
         float half = width * 0.5f;
         Vec3 leftP{ p.x + left.x * half, p.y, p.z + left.z * half };
@@ -111,8 +105,6 @@ void Track::draw() const {
         glVertex3f(leftP.x, leftP.y + 0.01f, leftP.z);
         glVertex3f(rightP.x, rightP.y + 0.01f, rightP.z);
     }
-    // close strip
-    // repeat first two verts to close
     const Vec3 &p0 = sampled[0];
     const Vec3 &p1 = sampled[1 % sampled.size()];
     Vec3 f{p1.x - p0.x, 0.0f, p1.z - p0.z};
@@ -167,4 +159,72 @@ void Track::draw() const {
         glVertex3f(c.x, c.y, c.z);
         glVertex3f(d.x, d.y, d.z);
     glEnd();
+
+    // Draw low walls along both edges to visualize the boundary (toggleable)
+    if (Config::showWalls) {
+        float wallH = 1.0f; // wall height
+        GLfloat wallSpec[] = {0.1f, 0.1f, 0.1f, 1.0f};
+        glMaterialfv(GL_FRONT, GL_SPECULAR, wallSpec);
+        glMaterialf(GL_FRONT, GL_SHININESS, 16.0f);
+        glColor3f(0.55f, 0.55f, 0.55f);
+
+        // Left wall (outer border where left points are)
+        glBegin(GL_QUAD_STRIP);
+        for (size_t i = 0; i < sampled.size(); ++i) {
+            const Vec3 &p = sampled[i];
+            const Vec3 &pNext = sampled[(i + 1) % sampled.size()];
+            Vec3 forward{pNext.x - p.x, 0.0f, pNext.z - p.z};
+            float flen2 = sqrtf(forward.x*forward.x + forward.z*forward.z); if (flen2==0) flen2=1.0f; forward.x/=flen2; forward.z/=flen2;
+            Vec3 left{ -forward.z, 0.0f, forward.x };
+            Vec3 leftP{ p.x + left.x * width*0.5f, p.y, p.z + left.z * width*0.5f };
+            glVertex3f(leftP.x, leftP.y + 0.01f, leftP.z);
+            glVertex3f(leftP.x, leftP.y + wallH, leftP.z);
+        }
+        const Vec3 &lp0 = sampled[0];
+        const Vec3 &lp1 = sampled[1 % sampled.size()];
+        Vec3 lforward{lp1.x - lp0.x, 0.0f, lp1.z - lp0.z};
+        float lflen = sqrtf(lforward.x*lforward.x + lforward.z*lforward.z); if (lflen==0) lflen=1.0f; lforward.x/=lflen; lforward.z/=lflen;
+        Vec3 ll{-lforward.z,0.0f,lforward.x};
+        glVertex3f(lp0.x + ll.x*width*0.5f, lp0.y+0.01f, lp0.z + ll.z*width*0.5f);
+        glVertex3f(lp0.x + ll.x*width*0.5f, lp0.y+wallH, lp0.z + ll.z*width*0.5f);
+        glEnd();
+
+        // Right wall (inner border where right points are)
+        glBegin(GL_QUAD_STRIP);
+        for (size_t i = 0; i < sampled.size(); ++i) {
+            const Vec3 &p = sampled[i];
+            const Vec3 &pNext = sampled[(i + 1) % sampled.size()];
+            Vec3 forward{pNext.x - p.x, 0.0f, pNext.z - p.z};
+            float flen2 = sqrtf(forward.x*forward.x + forward.z*forward.z); if (flen2==0) flen2=1.0f; forward.x/=flen2; forward.z/=flen2;
+            Vec3 left{ -forward.z, 0.0f, forward.x };
+            Vec3 rightP{ p.x - left.x * width*0.5f, p.y, p.z - left.z * width*0.5f };
+            glVertex3f(rightP.x, rightP.y + 0.01f, rightP.z);
+            glVertex3f(rightP.x, rightP.y + wallH, rightP.z);
+        }
+        const Vec3 &rp0 = sampled[0];
+        const Vec3 &rp1 = sampled[1 % sampled.size()];
+        Vec3 rforward{rp1.x - rp0.x, 0.0f, rp1.z - rp0.z};
+        float rflen = sqrtf(rforward.x*rforward.x + rforward.z*rforward.z); if (rflen==0) rflen=1.0f; rforward.x/=rflen; rforward.z/=rflen;
+        Vec3 rl{-rforward.z,0.0f,rforward.x};
+        glVertex3f(rp0.x - rl.x*width*0.5f, rp0.y+0.01f, rp0.z - rl.z*width*0.5f);
+        glVertex3f(rp0.x - rl.x*width*0.5f, rp0.y+wallH, rp0.z - rl.z*width*0.5f);
+        glEnd();
+    }
+}
+
+float Track::distanceToCenter(const Vec3 &p, Vec3 &outClosest) const {
+    float best = 1e9f;
+    Vec3 bestP{0,0,0};
+    for (size_t i = 0; i < sampled.size(); ++i) {
+        const Vec3 &s = sampled[i];
+        float dx = p.x - s.x;
+        float dz = p.z - s.z;
+        float d2 = dx*dx + dz*dz;
+        if (d2 < best) {
+            best = d2;
+            bestP = s;
+        }
+    }
+    outClosest = bestP;
+    return sqrtf(best);
 }

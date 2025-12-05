@@ -7,13 +7,15 @@ class Car {
 public:
     Car();
 
-    // update physics & controls
-    void update(float dt);
+    // update physics & controls; pass Track to enforce bounds
+    void update(float dt, const class Track* track);
 
     // render the car at its position
     void draw() const;
 
     void reset();
+    // reset car to start position defined by track (optional back offset)
+    void resetToTrack(const class Track* track, float backOffset = 1.5f);
 
     Vec3 position;
     float yaw;   // degrees

@@ -1,5 +1,6 @@
 // Scenery: simple trees and lamp posts placed around the track
 #include "../../include/scenery.h"
+#include "../../include/config.h"
 #include <GL/freeglut.h>
 #include <cmath>
 
@@ -17,7 +18,7 @@ void Scenery::generateFromTrack() {
     if (s.empty()) return;
 
     // place a tree every N samples on alternating sides, and a lamp every M samples
-    int N_tree = 8;
+    int N_tree = Config::N_tree;
     float offset = sourceTrack->width * 0.7f;
 
     for (size_t i = 0; i < s.size(); ++i) {

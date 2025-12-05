@@ -2,8 +2,9 @@
 #define CONFIG_H
 
 namespace Config {
-    // Toggle scene elements
     extern bool showScenery;
+    extern bool showWalls;
+    extern int N_tree;
 }
 
 #endif // CONFIG_H

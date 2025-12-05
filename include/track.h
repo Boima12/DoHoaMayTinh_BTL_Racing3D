@@ -23,6 +23,8 @@ public:
 	// access to raw sampled centerline (useful for edits)
 	std::vector<Vec3> sampled;
 	float width;
+	// compute nearest point on sampled centerline (2D xz), returns distance and sets outClosest
+	float distanceToCenter(const Vec3 &p, Vec3 &outClosest) const;
 
 private:
 	std::vector<Vec3> controlPoints;

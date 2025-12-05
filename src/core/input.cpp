@@ -24,6 +24,9 @@ namespace Input {
         if (key == 'c' || key == 'C') {
             Config::showScenery = !Config::showScenery;
         }
+        if (key == 'v' || key == 'V') {
+            Config::showWalls = !Config::showWalls;
+        }
     }
     void onKeyUp(unsigned char key, int x, int y) {
         keys[key] = false;

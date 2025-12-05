@@ -24,6 +24,9 @@ public:
 	void rotateYaw(float deg);
 	void rotatePitch(float deg);
 
+	// snap camera to a specific world position and target immediately
+	void snapTo(const Vec3 &pos, const Vec3 &target);
+
 private:
 	Vec3 m_pos;       // camera world position
 	Vec3 m_target;    // target to look at
