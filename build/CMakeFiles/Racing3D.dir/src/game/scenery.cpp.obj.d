@@ -105,6 +105,7 @@ CMakeFiles/Racing3D.dir/src/game/scenery.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/cerrno \
  C:/msys64/mingw64/include/c++/13.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
+ D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/config.h \
  C:/msys64/mingw64/include/GL/freeglut.h \
  C:/msys64/mingw64/include/GL/freeglut_std.h \
  C:/msys64/mingw64/include/windows.h \

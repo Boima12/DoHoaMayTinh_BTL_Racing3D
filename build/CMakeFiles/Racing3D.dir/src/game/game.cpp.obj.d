@@ -109,6 +109,8 @@ CMakeFiles/Racing3D.dir/src/game/game.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
  D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/scenery.h \
  D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/track.h \
+ D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/hud.h \
+ D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/car.h \
  D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/config.h \
  C:/msys64/mingw64/include/GL/freeglut.h \
  C:/msys64/mingw64/include/GL/freeglut_std.h \
@@ -347,6 +349,4 @@ CMakeFiles/Racing3D.dir/src/game/game.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/hud.h \
- D:/Work2/Coding_stuff/Computer_graphic/projects/DoHoaMayTinh_BTL_Racing3D/include/car.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc

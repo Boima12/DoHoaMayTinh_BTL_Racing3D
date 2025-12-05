@@ -19,6 +19,24 @@ void Camera::setDistance(float d) {
 void Camera::rotateYaw(float deg) { m_yaw += deg; }
 void Camera::rotatePitch(float deg) { m_pitch = clampf(m_pitch + deg, -89.0f, 89.0f); }
 
+void Camera::snapTo(const Vec3 &pos, const Vec3 &target) {
+	// Immediately set camera world position and look target.
+	m_pos = pos;
+	m_target = target;
+	// compute yaw from dx/dz (match convention used in update)
+	float dx = pos.x - target.x;
+	float dz = pos.z - target.z;
+	float yawRad = atan2f(-dx, dz); // yaw such that camera lies at (dx,dz)
+	m_yaw = yawRad * 180.0f / 3.14159265f;
+	// compute pitch from vertical offset and known distance/height
+	float dy = pos.y - target.y;
+	float sinP = (dy - m_height) / m_distance;
+	if (sinP > 1.0f) sinP = 1.0f;
+	if (sinP < -1.0f) sinP = -1.0f;
+	float pitchRad = asinf(sinP);
+	m_pitch = pitchRad * 180.0f / 3.14159265f;
+}
+
 void Camera::update(const Vec3 &target, float dt) {
 	// apply input controls: arrow keys rotate camera
 	if (Input::isSpecialDown(GLUT_KEY_LEFT)) rotateYaw(-80.0f * dt);

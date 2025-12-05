@@ -1,3 +1,8 @@
+/*
+bộ đo thời gian rất nhỏ dùng GLUT để tính delta time (thời gian giữa hai frame), 
+giá trị này được dùng để cập nhật vị trí, vận tốc, animation… trong game.
+*/
+
 // Simple timer using GLUT elapsed time
 #include "../../include/timer.h"
 #include <GL/freeglut.h>

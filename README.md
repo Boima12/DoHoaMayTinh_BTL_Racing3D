@@ -37,30 +37,30 @@ git pull origin main
 <hr>
 
 ### Cấu trúc thư mục của dự án
-assets/models/ - chứa mô hình 3D <br>
-assets/shaders/ - chứa shader program <br>
-assets/textures/ - chứa hình ảnh texture dùng cho mặt đường, xe, vật thể <br>
-include/camera.h - file header <br>
-include/car.h - file header <br>
-include/game.h - file header <br>
-include/input.h - file header <br>
-include/math.h - file header <br>
-include/render.h - file header <br>
-include/timer.h - file header <br>
-include/track.h - file header <br>
-include/window.h - file header <br>
+assets/models/ - chứa mô hình 3D (Chưa có nhu cầu phát triển thêm phần này) <br>
+assets/shaders/ - chứa shader program (Chưa có nhu cầu phát triển thêm phần này) <br>
+assets/textures/ - chứa hình ảnh texture dùng cho mặt đường, xe, vật thể (Chưa có nhu cầu phát triển thêm phần này) <br>
+
+include/*.h - file header <br>
+
 src/core/input.cpp - Bắt phím, chuột, xử lý các sự kiện nhập từ người chơi. <br>
 src/core/timer.cpp - Hệ thống đếm thời gian/frame time để cập nhật chuyển động mượt mà. <br>
 src/core/window.cpp - Khởi tạo cửa sổ FreeGLUT, cấu hình context OpenGL, xử lý resize. <br>
+
 src/engine/camera.cpp - Xử lý camera: góc nhìn, vị trí, hướng, di chuyển camera. <br>
-src/engine/math.cpp - Hàm toán học hỗ trợ: vector, độ dài, chuẩn hóa, tính góc, clamp,... <br>
-src/engine/render.cpp - Hàm render chung: setup lighting, vẽ mô hình, vẽ mesh, cấu hình OpenGL. <br>
+src/engine/math.cpp - Hàm toán học hỗ trợ: vector, độ dài, chuẩn hóa, tính góc, clamp,... (CHƯA LÀM, chờ đối chiếu lại với các phép chiếu của Cô) <br>
+src/engine/render.cpp - Hàm render chung: setup lighting, vẽ mô hình, vẽ mesh, cấu hình OpenGL. (CHƯA LÀM, chờ đối chiếu lại với các phép chiếu của Cô) <br>
+
 src/game/car.cpp - Xử lý xe: vị trí, vận tốc, rẽ trái/phải, vật lý đơn giản. <br>
 src/game/game.cpp - Game loop, cập nhật trạng thái game, gọi render, điều khiển cảnh. <br>
 src/game/track.cpp - Sinh đường đua, hình dạng track, checkpoint, vật cản, màu sắc. <br>
-src/main.cpp - file entry (chạy file này) <br>
+src/game/hud.cpp - code logic chính vẽ HUD <br>
+src/game/scenery.cpp - code logic chính vẽ cây phụ họa <br>
+
+src/main.cpp - file main <br>
 ./CMakeLists.txt - Cấu hình build cho CMake, dùng để biên dịch toàn bộ project. <br>
 ./README.md - file README.md  <br>
+./SETUP_GUIDE - file hướng dẫn setup cấu hình chạy <br>
 
 <br> <br> <br> <br> <br>
 <hr>
